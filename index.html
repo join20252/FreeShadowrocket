@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+          name="viewport">
+    <meta content="Shadowrocket(小火箭)在线安装" name="description"/>
+    <meta content="Shadowrocket, 小火箭, iOS, 免费, free, 苹果账号, 美区, apple id" name="keywords"/>
+    <title>Shadowrocket (小火箭)快速安装 - 御宅云</title>
+    <link href="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/c5/50/ad/c550ad28-d7bb-209c-05a6-849296bfddc5/AppIcon-0-1x_U007emarketing-0-10-0-0-85-220.png/230x0w.webp" rel="shortcut icon">
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.staticfile.org/flag-icons/6.6.6/css/flag-icons.min.css" rel="stylesheet">
+    <style>
+        a {
+            text-decoration: unset;
+        }
+
+        .border-success {
+            border-color: #6fd088 !important;
+        }
+
+        :root {
+            --bs-success-rgb: 111, 208, 136;
+        }
+    </style>
+</head>
+
+<body class="text-center container-fluid py-5 m-auto">
+<main class="">
+    <img alt="" class="shadow mb-4 bg-body-tertiary rounded-circle" src="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/c5/50/ad/c550ad28-d7bb-209c-05a6-849296bfddc5/AppIcon-0-1x_U007emarketing-0-10-0-0-85-220.png/230x0w.webp" height="120" width="120">
+    <h1 class="mb-3 fw-normal">Shadowrocket (小火箭)</h1>
+    <div class="mx-1 row justify-content-center">
+        <ol class="col-auto text-start">
+            <li>打开iPhone/iPad的蓝色<strong>&nbsp AppStore &nbsp</strong>软件（请不要打开设置）</li>
+            <li>右上角点击<strong>&nbsp 个人头像&nbsp </strong>进入账户，下拉到最底找到并点击<strong>&nbsp 退出登录&nbsp</strong></li>
+            <li><strong> &nbsp复制&nbsp</strong>本网站 共享账号和密码</li>
+            <li>点击登录，提示<strong> &nbspApple id安全&nbsp</strong>，请点击<strong> &nbsp其他选项-不升级&nbsp</strong></li>
+            <li>搜索 <strong> &nbsp<a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/shadowrocket/id932747118" target="_blank">Shadowrocket</a>&nbsp</strong>下载，或者其他你想下载的软件</li>
+            <li>用完务必<strong>&nbsp退出登录&nbsp</strong>，避免你的手机被锁</li>
+        </ol>
+    </div>
+    <div class="mb-3">
+        <a class="btn btn-outline-primary btn-lg" href="https://otakuyun.net" target="blank">购买小火箭节点</a>
+    </div>
+    <div class="row text-start justify-content-center" id="apple"></div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <hr class="devider devider-dotted">
+        </div>
+        <div class="col-md-8">
+            <p>Designed to protect your Internet traffic.</p>
+            <p><a href="https://otakuyun.net/" target="blank">一鍵接入，鏈接全球！</a></p>
+        </div>
+    </div>
+    <p class="mb-3 text-body-secondary">©&nbsp;2019~2023 <a href="https://otakuyun.net/" target="blank">御宅云</a>
+    </p>
+</main>
+<textarea id="copy" readonly="readonly" style="display:none;"></textarea>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript"></script>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/sweetalert/2.1.2/sweetalert.min.js" type="application/javascript"></script>
+<script charset="utf-8" type="text/javascript">
+  function copy(str) {
+    $('#copy').text(str).show();
+    const ele = document.getElementById('copy');
+    ele.select();
+    document.execCommand('copy', false, null);
+    $('#copy').hide();
+    swal({
+      title: '复制成功',
+      icon: 'success',
+      timer: 1000,
+      buttons: false
+    });
+  }
+
+  $.each([
+    'https://apple.laogoubi.net/s/9f6b8dae0a078750b4e7c9a5eddc6e19',
+    'https://apple.laogoubi.net/s/ec1c4f5415388e26f4c5d6c64880cdd5',
+    'https://apple.laogoubi.net/s/e1aa39381e5ec86a1b8214c10fd4a887',
+    'https://apple.laogoubi.net/s/df4ab9de842ce5f0abefcc560cf504f0',
+    'https://apple.laogoubi.net/s/90dcad228f402e73150bdb2c805f6e87'], function(i, url) {
+    $.getJSON(url, function(result) {
+      $.each(result, function(i, field) {
+        if (field['status'] === 1) {
+          //var status = ['primary', 'success', 'danger', 'warning'];
+          //var ico = ['robot', 'check2-all', 'slash-circle', 'exclamation-triangle'];
+          //var title = ['检测中', '状态正常', '状态异常', '等待检测'];
+          const country = {'美国': 'us', '澳大利亚': 'au', '中国大陆': 'cn', '台湾': 'tw', '香港': 'hk', '韩国': 'kr', null: 'un'};
+          let html = `<div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+									<div class="card border-success mb-3">
+										<div class="card-header bg-transparent border-bottom-0 border-success">
+											<h5 class="my-0 text-success">
+												<i class="me-3 bi bi-check2-all"></i> {{username}} <span class="float-end"><i class="fi fi-{{country_code}} fis rounded-circle"></i> {{country}}</span>
+											</h5>
+										</div>
+										<div class="card-body">
+                                            <p class="card-text">检测时间：{{time}}</p>
+                                            <button class="btn btn-outline-secondary waves-effect" onclick="copy('{{username}}')">复制帐号</button>
+                                            <button class="btn btn-outline-secondary waves-effect" onclick="copy('{{password}}')">复制密码</button>
+										</div>
+									</div>
+                                </div>`;
+          html = html.replace(/{{time}}/g, field['time']);
+          html = html.replace(/{{country}}/g, field['country']);
+          html = html.replace(/{{country_code}}/g, country[field['country']]);
+          html = html.replace(/{{username}}/g, field['username']);
+          html = html.replace(/{{password}}/g, field['password']);
+          $('#apple').append(html);
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

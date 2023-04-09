@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
     name="viewport" />
-  <meta content="Shadowrocket(小火箭)在线安装" name="description" />
-  <meta content="Shadowrocket, 小火箭, iOS, 免费苹果账号, 美区, apple id" name="keywords" />
+  <meta content="Shadowrocket, 小火箭, iOS, 免费苹果账号, 美区, apple id, 使用教程, shadowsocks, V2Ray, Trojan" name="keywords" />
+  <meta content="Shadowrocket(小火箭)在线安装, 提供免费的苹果账号用于安装Shadowrocket" name="description" />
   <title>Shadowrocket (小火箭)快速安装 - 御宅云</title>
   <link
     href="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/c5/50/ad/c550ad28-d7bb-209c-05a6-849296bfddc5/AppIcon-0-1x_U007emarketing-0-10-0-0-85-220.png/230x0w.webp"
@@ -51,7 +51,7 @@
       </ol>
     </div>
     <div class="mb-3">
-      <a class="btn btn-outline-primary btn-lg" href="https://otakuyun.net" target="blank">购买小火箭节点</a>
+      <a class="btn btn-outline-primary btn-lg" href="https://ssr.otakuyun.net/register?aff=qJD41GJv" target="blank">购买高速小火箭节点</a>
     </div>
     <div class="row text-start justify-content-center" id="apple">
       <div class="col-auto my-5" id="loading"><i aria-hidden="true" class="spinner-border me-5"></i> 加载最新账号信息</div>
@@ -74,6 +74,7 @@
     type="application/javascript"></script>
   <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/sweetalert/2.1.2/sweetalert.min.js"
     type="application/javascript"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWCME7N22C"></script>
   <script charset="utf-8" type="text/javascript">
     function copy(str) {
       $("#copy").text(str).show();
@@ -88,6 +89,11 @@
         buttons: false,
       });
     }
+	  
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JWCME7N22C');
 
     function minsDiff(time) {
       return parseInt((new Date() - new Date(time)) / 60000);

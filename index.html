@@ -191,8 +191,8 @@
             								</div>
                           </div>`;
             html = html.replace(/{{time}}/g, field["time"] + " <code class='float-end'>" + minsDiff(field["time"]) + "分钟前</code>");
-            html = html.replace(/{{country}}/g, field["country"]);
-            html = html.replace(/{{country_code}}/g, field["country"] ? country[field["country"]] : "");
+            html = html.replace(/{{country}}/g, field["country"] ?? "");
+            html = html.replace(/{{country_code}}/g, field["country"] ?? null);
             html = html.replace(/{{username}}/g, field["username"]);
             html = html.replace(/{{password}}/g, field["password"]);
             $("#apple").prepend(html);

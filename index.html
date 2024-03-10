@@ -173,6 +173,7 @@
                 韩国: "kr",
                 日本: "jp",
                 印度尼西亚: "id",
+                土耳其: "tr",
                 null: "un"
             };
             let html = `<div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -190,7 +191,7 @@
             								</div>
                           </div>`;
             html = html.replace(/{{time}}/g, field["time"] + " <code class='float-end'>" + minsDiff(field["time"]) + "分钟前</code>");
-            html = html.replace(/{{country}}/g, field["country"] ?? "");
+            html = html.replace(/{{country}}/g, field["country"]);
             html = html.replace(/{{country_code}}/g, field["country"] ? country[field["country"]] : "");
             html = html.replace(/{{username}}/g, field["username"]);
             html = html.replace(/{{password}}/g, field["password"]);
